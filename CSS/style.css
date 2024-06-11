@@ -2,14 +2,14 @@
 
 
 .header {
-    position: fixed;
-    background-color:#fff;
+    position:fixed;
+    background-color:crimson;
     display: flex;
     justify-content:space-between;
-    align-items: center;
     font-size:20px;
     width: 100%;
     
+
 }
 
 .logo {
@@ -264,4 +264,39 @@
     color: pink;
     font-size: 20px;
 }
+@media (max-width: 1024px) {
+    .bar-div {
+        display: block;
+        
+    }
+}
 
+
+@media (max-width:768px) {
+    .header { flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .box-contain {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (max-width:480px) {}
+    .footer {
+        flex-wrap: wrap;
+       
+    }
+    .box-contain {
+        flex-wrap: wrap;
+    }
+
+@media (max-width:320) {
+.footer {
+    align-items: center;
+}
+.credit {
+    justify-content: center;
+}
+}
